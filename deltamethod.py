@@ -36,7 +36,7 @@ def ttest(mean_control,mean_treatment,var_control,var_treatment):
     p_val = stats.norm.sf(abs(z))*2
 
     result = {'mean_control':mean_control,
-             'mean_experiment':mean_experiment,
+             'mean_experiment':mean_treatment,
              'var_control':var_control,
              'var_experiment':var_treatment,
              'difference':diff,
